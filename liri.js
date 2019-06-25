@@ -6,26 +6,20 @@ var keys = require("./keys.js");
 var fs = require("fs");
 var axios = require("axios");
 var Spotify = require('node-spotify-api');
-//for movie or song
-// var x = "";
 
 var spotify = new Spotify(keys.spotify);
 
 //stored arguments array
 var command = process.argv[2];
-var secondCommand = process.argv[3];
-
-
+var secondCommand = process.argv.slice(3).join("+");
 
 //Concert
-
 function concerts(concert) {
-
     var queryURL = "https://rest.bandsintown.com/artists/" + concert + "/events?app_id=codingbootcamp";
-    console.log(queryURL);
+    console.log(concert);
     axios.get(queryURL).then(
         function (response) {
-            console.log(response.data[0]);
+            console.log(response.data);
         })
 
 }
