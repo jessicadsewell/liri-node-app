@@ -21,12 +21,14 @@ function concerts(concert) {
     console.log(concert);
     axios.get(queryURL).then(
         function (response) {
-            console.log(response.data);
-            console.log("Venue Name: " + response.data[0].venue.name);
-            console.log("Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
-            var time = response.data[0].datetime;
-            var timePretty = moment(time).format("MM/DD/YYYY");
-            console.log("Date: " + timePretty);
+            for (var i = 0; i < response.data.length; i++) {
+                console.log("Venue Name: " + response.data[i].venue.name);
+                console.log("Location: " + response.data[i].venue.city + ", " + response.data[0].venue.country);
+                var time = response.data[i].datetime;
+                var timePretty = moment(time).format("MM/DD/YYYY");
+                console.log("Date: " + timePretty);
+                console.log("-----------------------");
+            }
         })
 }
 
