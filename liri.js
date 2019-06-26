@@ -8,6 +8,8 @@ var axios = require("axios");
 var Spotify = require('node-spotify-api');
 
 var spotify = new Spotify(keys.spotify);
+var moment = require('moment');
+moment().format();
 
 //stored arguments array
 var command = process.argv[2];
@@ -20,8 +22,12 @@ function concerts(concert) {
     axios.get(queryURL).then(
         function (response) {
             console.log(response.data);
+            console.log("Venue Name: " + response.data[0].venue.name);
+            console.log("Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
+            var time = response.data[0].datetime;
+            var timePretty = moment(time).format("MM/DD/YYYY");
+            console.log("Date: " + timePretty);
         })
-
 }
 
 //Spotify
