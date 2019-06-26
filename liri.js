@@ -21,7 +21,9 @@ function concerts(concert) {
     console.log(concert);
     axios.get(queryURL).then(
         function (response) {
-            for (var i = 0; i < response.data.length; i++) {
+            console.log("HERE'S YOUR RESULTS!");
+            console.log("-----------------------");
+            for (var i = 0; i < 5; i++) {
                 console.log("Venue Name: " + response.data[i].venue.name);
                 console.log("Location: " + response.data[i].venue.city + ", " + response.data[0].venue.country);
                 var time = response.data[i].datetime;
@@ -40,7 +42,9 @@ function spotifythis(song) {
             console.log('Error occurred: ' + err);
             return;
         }
-        for (var i = 0; i < data.tracks.items.length; i++) {
+        console.log("HERE'S YOUR RESULTS!");
+        console.log("-----------------------");
+        for (var i = 0; i < 5; i++) {
             var songData = data.tracks.items[i];
             //artist
             console.log("Artist: " + songData.artists[0].name);
@@ -69,6 +73,8 @@ function movies(movie) {
 
     axios.get(queryUrl).then(
         function (response) {
+            console.log("HERE'S YOUR RESULTS!");
+            console.log("-----------------------");
             console.log("Title: " + response.data.Title);
             console.log("Release Year: " + response.data.Year);
             console.log("IMdB Rating: " + response.data.imdbRating);
