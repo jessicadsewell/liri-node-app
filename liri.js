@@ -57,11 +57,11 @@ function spotifythis(song) {
             console.log("-----------------------");
 
             //adds text to random.txt
-            // fs.appendFile('log.txt', songData.artists[0].name);
-            // fs.appendFile('log.txt', songData.name);
-            // fs.appendFile('log.txt', songData.preview_url);
-            // fs.appendFile('log.txt', songData.album.name);
-            // fs.appendFile('log.txt', "-----------------------");
+            // fs.appendFile('random.txt', songData.artists[0].name);
+            // fs.appendFile('random.txt', songData.name);
+            // fs.appendFile('random.txt', songData.preview_url);
+            // fs.appendFile('random.txt', songData.album.name);
+            // fs.appendFile('random.txt', "-----------------------");
         }
     });
 }
@@ -125,7 +125,7 @@ switch (command) {
         if (secondCommand) {
             spotifythis(secondCommand);
         } else {
-            spotifythis("The Sign");
+            spotifythis("The Sign Ace of Base");
         }
         break;
 
