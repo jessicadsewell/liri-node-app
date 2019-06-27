@@ -27,3 +27,6 @@ movie-this = This will search the IMBD API for the movie searched and output the
    * Actors in the movie.
    
 do-what-it-says = Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
+
+
+Video:liri_recording.mov
