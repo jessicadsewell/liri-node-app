@@ -46,7 +46,7 @@ In the terminal, as you run the following commands, LIRI will complete the assoc
 
 ![Do what it says Screenshot](/images/doit.png)
 
-**default** If nothing is chosen and node is ran by itself, the terminal/bash window will display a default reading.
+**default** = If nothing is chosen and node is ran by itself, the terminal/bash window will display a default reading.
 
 ![Default](/images/default.png)
 
