@@ -33,7 +33,6 @@ In the terminal, as you run the following commands, LIRI will complete the assoc
    * Rotten Tomatoes Rating of the movie.
    * Country where the movie was produced.
    * Language of the movie.
-   * Plot of the movie.
    * Actors in the movie.
  
  ![Movie Screenshot](/images/moviethis.png)
