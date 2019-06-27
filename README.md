@@ -9,8 +9,7 @@ In the terminal, as you run the following commands, LIRI will complete the assoc
   * Name of the venue
   * Venue location
   * Date of the Event (use moment to format this as "MM/DD/YYYY")
-
-![screenshot](/images/concertscreenshot.png)
+![Image of Concert this] (file:///Users/jessicasewell/Desktop/Screen%20Shot%202019-06-26%20at%208.12.54%20PM.png)
  
 **spotify-this-song** = This will search the Spotifi API for the song and display information that matches to the terminal:
 
