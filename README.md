@@ -9,7 +9,8 @@ In the terminal, as you run the following commands, LIRI will complete the assoc
   * Name of the venue
   * Venue location
   * Date of the Event (use moment to format this as "MM/DD/YYYY")
-  ![Concert Screenshot](/images/concertscreenshot.png)
+
+![Concert Screenshot](/images/concertscreenshot.png)
  
 **spotify-this-song** = This will search the Spotifi API for the song and display information that matches to the terminal:
 
@@ -17,10 +18,12 @@ In the terminal, as you run the following commands, LIRI will complete the assoc
   * The song's name
   * A preview link of the song from Spotify
   * The album that the song is from
-  ![Spotify Screenshot](/images/spotifythis.png)
+
+![Spotify Screenshot](/images/spotifythis.png)
   
-  If no song is chosen, but the command is spotify-this-song, "The Sign" by Ace of Base will search as default. 
-  ![Spotify Screenshot Default](/images/spotifythisdefault.png)
+  If no song is chosen, but the command is spotify-this-song, "The Sign" by Ace of Base will search as default.
+  
+![Spotify Screenshot Default](/images/spotifythisdefault.png)
   
 **movie-this** = This will search the IMBD API for the movie searched and output the following information to your terminal/bash window:
 
@@ -32,10 +35,12 @@ In the terminal, as you run the following commands, LIRI will complete the assoc
    * Language of the movie.
    * Plot of the movie.
    * Actors in the movie.
-   ![Movie Screenshot](/images/moviethis.png)
+ 
+ ![Movie Screenshot](/images/moviethis.png)
    
    If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
-   ![Movie Screenshot Default](/images/moviethisdefault.png)
+ 
+ ![Movie Screenshot Default](/images/moviethisdefault.png)
    
 **do-what-it-says** = Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
 
