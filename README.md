@@ -17,6 +17,8 @@ In the terminal, as you run the following commands, LIRI will complete the assoc
   * A preview link of the song from Spotify
   * The album that the song is from
   
+  If no song is chosen, but the command is spotify-this-song, "The Sign" by Ace of Base will search as default. 
+  
 **movie-this** = This will search the IMBD API for the movie searched and output the following information to your terminal/bash window:
 
    * Title of the movie.
@@ -27,6 +29,8 @@ In the terminal, as you run the following commands, LIRI will complete the assoc
    * Language of the movie.
    * Plot of the movie.
    * Actors in the movie.
+   
+   If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
    
 **do-what-it-says** = Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
 
